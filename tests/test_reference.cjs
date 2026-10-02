@@ -1,0 +1,56 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
+const root=path.resolve(__dirname,'..'),data=JSON.parse(fs.readFileSync(path.join(root,'docs/data.js'),'utf8').replace(/^window.FE_DATA = /,'').replace(/;\s*$/,''));
+const nodes={};const node=id=>nodes[id]??={value:'',innerHTML:'',textContent:'',showModal(){this.open=true}};
+const ctx=vm.createContext({window:{FE_DATA:data},document:{querySelector:node,querySelectorAll:()=>[],activeElement:null},localStorage:{getItem:()=>null}});
+for(const f of ['dietrich.js','campaign.js','reference.js'])vm.runInContext(fs.readFileSync(path.join(root,'web',f),'utf8'),ctx);
+vm.runInContext(fs.readFileSync(path.join(root,'web/app.js'),'utf8').split('function navigate()')[0],ctx);
+for(const [id,count] of Object.entries({kai:4,dietrich:8,theodora:7,leda:4})){
+ const html=vm.runInContext(`routePortal(D.story.find(s=>s.id==='${id}'))`,ctx);
+ assert.equal([...html.matchAll(/data-paralogue=/g)].length,count);
+ assert(html.includes(`#route/${id}/paralogues`)&&html.includes(`#route/${id}/classes`));
+ assert(!html.includes(`data-paralogue="${id}"`),'Protagonist does not receive own paralogue');
+ const linked=[...html.matchAll(/data-class="([^"]+)"/g)].map(m=>m[1]);assert(linked.length>0&&linked.every(id=>data.classes.some(c=>c.id===id)));
+ for(const n of [...data.story.find(s=>s.id===id).profile.pilot.native,...data.story.find(s=>s.id===id).profile.pilot.scouts])for(const name of n.path)assert(data.classes.some(c=>c.name===name||c.aliases.includes(name)),`missing ${name}`);
+}
+const di=data.paralogues.find(p=>p.id==='bertrand').routes.dietrich;assert.equal(di.length,1);assert.equal(di[0].start,di[0].end);assert.equal(di[0].start,'9/17');
+const or=data.paralogues.find(p=>p.id==='orhel').routes.kai[0];assert.equal(or.end,'10/19');assert.equal(or.deadline,'10/21');
+assert.equal(data.paralogues.find(p=>p.id==='talimoon').routes.kai.length,2);
+assert(data.paralogues.some(p=>Object.values(p.routes).flat().some(w=>w.deadline===null)),'Missing deadlines remain explicit');
+assert(data.paralogues.find(p=>p.id==='dietrich').consequence.includes('不能招募法比奥'));
+assert.equal(new Set(data.classes.map(c=>c.id)).size,data.classes.length);
+assert(data.classes.every(c=>!/[\u3040-\u30ff]/.test(c.name)));
+assert(data.classes.filter(c=>c.tier==='最上级'||c.tier==='神将').every(c=>c.phase.startsWith('第三部')));
+vm.runInContext('filterClasses()',ctx);assert(node('#class-count').textContent.includes('54'));
+const ladder=node('#class-results').innerHTML;assert.equal([...ladder.matchAll(/class="class-tier"/g)].length,6);assert.equal([...ladder.matchAll(/class="class-tile"/g)].length,54);
+assert.equal([...ladder.matchAll(/src="assets\/icon\/class-sm\/[^"]+\.webp"/g)].length,54,'every tile shows its class icon');
+assert(ladder.indexOf('>基础<')<ladder.indexOf('>初级<')&&ladder.indexOf('>最上级<')<ladder.indexOf('>神将<'),'tiers in ladder order');
+node('#class-tier').value='神将';vm.runInContext('filterClasses()',ctx);assert(node('#class-count').textContent.includes('8'));
+node('#class-tier').value='';node('#class-query').value='找不到的兵种';vm.runInContext('filterClasses()',ctx);assert(node('#class-results').innerHTML.includes('没有符合条件'));
+node('#class-query').value='';node('#class-role').value='开锁';vm.runInContext('filterClasses()',ctx);assert(node('#class-results').innerHTML.includes('恶棍')&&!node('#class-results').innerHTML.includes('主教'));
+const c=data.classes.find(c=>c.name==='舞者');vm.runInContext(`showClass('${c.id}')`,ctx);assert(node('#class-dialog').open&&node('#class-dialog').innerHTML.includes('第一部为蕾达专用'));
+node('#global-query').value='外传';vm.runInContext('renderSearch()',ctx);assert(node('#search-results').innerHTML.includes('#route/dietrich/paralogues'));
+// In-game date tracker: window states, labels, digest, invalid dates.
+const st=(id,route,day)=>vm.runInContext(`paralogueState(D.paralogues.find(p=>p.id==='${id}').routes.${route},'${day}')`,ctx);
+const label=(id,route,day)=>vm.runInContext(`paralogueLabel(paralogueState(D.paralogues.find(p=>p.id==='${id}').routes.${route},'${day}'))`,ctx);
+assert.equal(vm.runInContext(`dayOfYear('2/30')`,ctx),null);assert.equal(vm.runInContext(`dayOfYear('13/1')`,ctx),null);assert.equal(vm.runInContext(`dayOfYear('1/1')`,ctx),0);
+assert.equal(st('bertrand','dietrich','9/16').state,'upcoming');assert.equal(st('bertrand','dietrich','9/16').days,1);
+assert.equal(label('bertrand','dietrich','9/17'),'仅今天可接');
+assert.notEqual(st('bertrand','dietrich','9/18').state,'open');
+assert.equal(st('orhel','kai','10/17').state,'upcoming');assert.equal(st('talimoon','kai','9/18').state,'open');assert(label('talimoon','kai','9/18').includes('9/22 截止（含今天还有 5 天）'));
+assert.equal(label('orhel','kai','10/18'),'明天截止，尽快去接');assert.equal(label('orhel','kai','10/19'),'今天是最后一天可接');
+assert.equal(st('orhel','kai','10/20').state,'deadline');assert(label('orhel','kai','10/20').includes('10/21'));
+assert.equal(st('orhel','kai','10/22').state,'closed');
+assert.equal(st('talimoon','kai','9/25').state,'upcoming','a later window re-opens the paralogue');assert.equal(st('talimoon','kai','9/25').days,6);
+assert.equal(st('talimoon','kai','10/11').state,'deadline');assert.equal(st('talimoon','theodora','10/11').state,'closed','no deadline in sources: closed, not guessed');
+assert.equal(st('orhel','kai','x'),null);
+const dg=vm.runInContext(`paralogueDigest('kai','9/20')`,ctx);assert.equal(dg.rows.length,4);assert(dg.open>=1&&dg.open+dg.closed+dg.rows.filter(x=>x.st.state==='upcoming').length+dg.rows.filter(x=>x.st.state==='deadline').length===4);
+const cal=vm.runInContext(`paralogueSection('kai')`,ctx);assert(cal.includes('class="gamedate" data-route="kai"')&&[...cal.matchAll(/data-status-for=/g)].length===4);
+// Window overview: one row per paralogue, single-day marker, reopened windows, no today line without a date.
+const gantt=vm.runInContext(`paralogueGantt('dietrich')`,ctx);
+assert.equal([...gantt.matchAll(/<li /g)].length,8);assert.equal([...gantt.matchAll(/pg-win is-day/g)].length,1,'Bertrand 9/17 only');
+const tali=gantt.split('data-scroll="para-talimoon"')[1].split('</li>')[0];assert.equal([...tali.matchAll(/class="pg-win/g)].length,2);
+const dues=[...tali.matchAll(/class="pg-due" style="left:([\d.]+)%;width:([\d.]+)%/g)].map(m=>[+m[1],+m[2]]),wins=[...tali.matchAll(/class="pg-win" style="left:([\d.]+)%/g)].map(m=>+m[1]);
+assert(dues[0][0]+dues[0][1]<=wins[1]+0.01,'first dashed stretch stops before the window reopens');
+assert(!gantt.includes('pg-today')&&gantt.includes('来源未单列'));
+assert(cal.includes('data-gantt="kai"')&&cal.includes('id="para-orhel"'));
+console.log('Four route calendars, distinct windows/deadlines, class links, filters, modal and search passed.');

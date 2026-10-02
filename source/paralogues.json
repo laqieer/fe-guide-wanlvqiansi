@@ -1,0 +1,547 @@
+[
+  {
+    "id": "leda",
+    "person": "蕾达",
+    "title": "阳动作战",
+    "place": "帝都 · 卡拉神殿前",
+    "reward": "银盾 ×1",
+    "routes": {
+      "dietrich": [
+        {
+          "chapter": "9",
+          "start": "9/2",
+          "end": "9/8",
+          "deadline": null
+        }
+      ],
+      "theodora": [
+        {
+          "chapter": "10",
+          "start": "9/2",
+          "end": "9/8",
+          "deadline": null
+        }
+      ]
+    },
+    "consequence": "完成后还要等蕾达队败退，才能推进巴卡尼亚的招募；仍需满足支援、名声及交涉。",
+    "people": "巴卡尼亚",
+    "steps": "向神殿前的委托人接取。",
+    "sources": [
+      {
+        "url": "https://docs.qq.com/sheet/DV0N0VUZLSXRmUWFq",
+        "label": "腾讯共创表 · 03-全外传信息（2026-09-29 核对）"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/577847",
+        "label": "GameWith · 蕾达外传战斗机制",
+        "checkedAt": "2026-10-01",
+        "evidenceLocation": "「障害物は1回の攻撃でまとめて壊せる」「6ターン目開始時に味方増援＋レダ離脱」"
+      },
+      {
+        "url": "https://game8.jp/fe-banshisenko/816870",
+        "label": "Game8 · 蕾达外传战斗机制",
+        "checkedAt": "2026-10-01",
+        "evidenceLocation": "「障害物は攻撃を受けるとまとめて破壊される」「ターン経過で味方増援が到着してレダが離脱」"
+      }
+    ],
+    "strategy": [
+      "障碍物被攻击破坏时，邻接障碍也会连锁消失；敌方攻击同样能触发。推进前检查后排是否会因此直接暴露。",
+      "战力不足时可先稳守等待友军增援；增援到达时蕾达会离场，不要继续把她计入之后的站位与输出。"
+    ],
+    "checkedAt": "2026-10-01",
+    "gameVersion": null,
+    "difficulty": null,
+    "route": "迪托利希／赛奥朵拉线",
+    "chapter": "迪托利希第9章；赛奥朵拉第10章",
+    "status": "page-reviewed",
+    "scope": "本次只交叉核对新增战斗机制；原接取日历保留，缺少单列完成期限仍留空。未作游戏内实测，版本与难度未注明。",
+    "spoilerLevel": "外传机制"
+  },
+  {
+    "id": "theodora",
+    "person": "赛奥朵拉",
+    "title": "勇士像的下落",
+    "place": "帝都 · 下参道附近",
+    "reward": "斯伦德枪 ×1",
+    "routes": {
+      "dietrich": [
+        {
+          "chapter": "9",
+          "start": "9/3",
+          "end": "9/8",
+          "deadline": null
+        }
+      ]
+    },
+    "consequence": "仅迪托利希篇可接。想收集这段人物故事，应在第9章前半段处理。",
+    "people": "",
+    "steps": "向下参道附近的委托人接取。",
+    "sources": [
+      {
+        "url": "https://docs.qq.com/sheet/DV0N0VUZLSXRmUWFq",
+        "label": "腾讯共创表 · 03-全外传信息（2026-09-29 核对）"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/577869",
+        "label": "GameWith · 赛奥朵拉外传机关与雾战",
+        "checkedAt": "2026-10-01",
+        "evidenceLocation": "「進め方」「3つの装置を踏むとクリア」「ゴーレムが強力なので固まって動く」；日期分歧另记日志"
+      },
+      {
+        "url": "https://game8.jp/fe-banshisenko/816854",
+        "label": "Game8 · 赛奥朵拉外传机关与雾战",
+        "checkedAt": "2026-10-01",
+        "evidenceLocation": "「3つの仕掛けを起動するとクリア」「視界が狭いのである程度固まって移動しよう」；日期分歧另记日志"
+      }
+    ],
+    "strategy": [
+      "胜利目标是踩上并启动3处机关：地图下方2处、上方1处。开局先查看目标位置，不必把歼灭全场当成胜利条件。",
+      "地图有雾，前排成组探路，确认安全后再让后排跟上；别为分头踩机关，让治疗或远程单位单独暴露。"
+    ],
+    "checkedAt": "2026-10-01",
+    "gameVersion": null,
+    "difficulty": null,
+    "route": "仅迪托利希线",
+    "chapter": "第一部第9章",
+    "status": "page-reviewed",
+    "scope": "本次只交叉核对新增战斗机制；原接取日历保留，缺少单列完成期限仍留空。未作游戏内实测，版本与难度未注明。",
+    "spoilerLevel": "外传机制"
+  },
+  {
+    "id": "bertrand",
+    "person": "贝特朗",
+    "title": "亲善比赛",
+    "place": "帝都 · 大斗技场前",
+    "reward": "巨大金块 ×1",
+    "routes": {
+      "kai": [
+        {
+          "chapter": "10",
+          "start": "9/17",
+          "end": "9/25",
+          "deadline": null
+        }
+      ],
+      "dietrich": [
+        {
+          "chapter": "9",
+          "start": "9/17",
+          "end": "9/17",
+          "deadline": null
+        }
+      ],
+      "theodora": [
+        {
+          "chapter": "11",
+          "start": "9/17",
+          "end": "9/25",
+          "deadline": null
+        }
+      ]
+    },
+    "consequence": "关系到佩佩，以及迪托利希篇盖茨的招募；盖茨还要等待贝特朗队败退。第三部第一区分的贝特朗加入也要求完成此外传。",
+    "people": "佩佩、盖茨、贝特朗",
+    "steps": "向大斗技场前的贝特朗接取。",
+    "sources": [
+      {
+        "url": "https://docs.qq.com/sheet/DV0N0VUZLSXRmUWFq",
+        "label": "腾讯共创表 · 03-全外传信息（2026-09-29 核对）"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/577839",
+        "label": "外传接取地点与完成期限 · GameWith"
+      }
+    ]
+  },
+  {
+    "id": "talimoon",
+    "person": "塔利穆恩",
+    "title": "消失的马车",
+    "place": "帝都 · 港口",
+    "reward": "净化剑 ×1",
+    "routes": {
+      "kai": [
+        {
+          "chapter": "10",
+          "start": "9/17",
+          "end": "9/22",
+          "deadline": "10/12"
+        },
+        {
+          "chapter": "10",
+          "start": "10/1",
+          "end": "10/10",
+          "deadline": "10/12"
+        }
+      ],
+      "dietrich": [
+        {
+          "chapter": "9",
+          "start": "9/17",
+          "end": "9/19",
+          "deadline": "10/12"
+        },
+        {
+          "chapter": "10—11",
+          "start": "10/1",
+          "end": "10/10",
+          "deadline": "10/12"
+        }
+      ],
+      "theodora": [
+        {
+          "chapter": "11",
+          "start": "9/17",
+          "end": "9/22",
+          "deadline": null
+        },
+        {
+          "chapter": "11",
+          "start": "10/1",
+          "end": "10/10",
+          "deadline": null
+        }
+      ]
+    },
+    "consequence": "关系到乌修拉的招募；交涉仍有选项要求。第三部第一区分的塔利穆恩加入也要求完成此外传。",
+    "people": "乌修拉、塔利穆恩",
+    "steps": "向港口的塔利穆恩接取；两段日期是同一外传的两个接取窗口，不用重复完成。",
+    "sources": [
+      {
+        "url": "https://docs.qq.com/sheet/DV0N0VUZLSXRmUWFq",
+        "label": "腾讯共创表 · 03-全外传信息（2026-09-29 核对）"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/577619",
+        "label": "GameWith · 塔利穆恩外传截贼与两种胜利条件",
+        "evidenceLocation": "「盗賊に逃げられると敗北」「目標地点前で陣形を整える」「ルフと盗賊の戦闘を有効活用する」「積荷は回収しなくてもクリア可能」；正文525—575行",
+        "checkedAt": "2026-10-02"
+      },
+      {
+        "url": "https://game8.jp/fe-banshisenko/816695",
+        "label": "Game8 · 塔利穆恩外传货物与敌方互攻",
+        "evidenceLocation": "「積荷を持った盗賊を離脱前に撃破する」「盗賊と鳥の同士討ちを利用する」「飛行特効の武器や戦技で鳥を素早く倒す」；正文105—129行；日期分歧另记",
+        "checkedAt": "2026-10-02"
+      },
+      {
+        "url": "https://chucco.com/fefw-secret-of-missing-carriage/",
+        "label": "chucco玩家记录 · 凯伊线塔利穆恩外传",
+        "evidenceLocation": "「消えた馬車の秘密攻略」；正文51—68行列胜败条件、敌方互攻与击败掉货。败北条件点名凯伊，仅作凯伊线现场记录，不推广敌数、等级或完成回合",
+        "checkedAt": "2026-10-02"
+      }
+    ],
+    "strategy": [
+      "携带货物的盗贼到达撤离目标点就会失败。优先封住逃跑路线；货物被拿走不等于立即失败，击败持有者后仍可取回。",
+      "胜利条件是回收全部货物，或击败全部敌人。守住退路后，再按战况选择回收或歼敌，不必为了捡货物贸然拆散防线。",
+      "盗贼与鸟类敌人会互相攻击，可以利用双方交战造成的削血；出战前准备弓或对飞行有效的战技，仍以阻止盗贼逃脱为优先。"
+    ],
+    "route": "凯伊／迪托利希／赛奥朵拉线",
+    "chapter": "凯伊第10章；迪托利希第9—11章；赛奥朵拉第11章",
+    "scope": "本次交叉核对战斗机制与推进建议；原接取窗口及完成期限全部保留。未作游戏内实测，版本与难度未注明。玩家记录仅作凯伊线机制佐证，不将其敌方等级、数量与通关回合推广至其他路线或难度。封路、回收与歼敌的选择是编辑建议。",
+    "checkedAt": "2026-10-02",
+    "gameVersion": null,
+    "difficulty": null,
+    "status": "page-reviewed",
+    "spoilerLevel": "外传机制"
+  },
+  {
+    "id": "anna",
+    "person": "安娜",
+    "title": "金黄色的秘密",
+    "place": "帝都 · 达古扎神殿前",
+    "reward": "奥利哈刚 ×1",
+    "routes": {
+      "kai": [
+        {
+          "chapter": "10",
+          "start": "9/24",
+          "end": "10/5",
+          "deadline": null
+        }
+      ],
+      "dietrich": [
+        {
+          "chapter": "10—11",
+          "start": "9/29",
+          "end": "10/5",
+          "deadline": null
+        }
+      ],
+      "theodora": [
+        {
+          "chapter": "11",
+          "start": "9/24",
+          "end": "10/5",
+          "deadline": null
+        }
+      ]
+    },
+    "consequence": "主要收益是素材、金钱与名声。安娜外传不在蕾达篇开放。",
+    "people": "",
+    "steps": "向神殿前的安娜接取。",
+    "sources": [
+      {
+        "url": "https://docs.qq.com/sheet/DV0N0VUZLSXRmUWFq",
+        "label": "腾讯共创表 · 03-全外传信息（2026-09-29 核对）"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/577829",
+        "label": "GameWith · 安娜外传战斗机制",
+        "checkedAt": "2026-10-01",
+        "evidenceLocation": "「攻略ポイント」：ソレル牵制；矿堆5／10与重突進"
+      },
+      {
+        "url": "https://game8.jp/fe-banshisenko/816696",
+        "label": "Game8 · 安娜外传战斗机制",
+        "checkedAt": "2026-10-01",
+        "evidenceLocation": "「黄金色の秘密の攻略ポイント」：5堆一次、10堆两次及牵制／拆矿"
+      }
+    ],
+    "strategy": [
+      "客串单位索雷尔（ソレル）牵制巨人，其余人清理沿途敌人并拆矿，不把全队挤在巨人面前。",
+      "地图共10堆矿，每破坏5堆会触发一次对巨人的大额伤害，最多两次。优先安排机动单位拆矿；安娜的「重突進」可以边移动边破坏。"
+    ],
+    "checkedAt": "2026-10-01",
+    "gameVersion": null,
+    "difficulty": null,
+    "route": "凯伊／迪托利希／赛奥朵拉线",
+    "chapter": "凯伊第10章；迪托利希第10—11章；赛奥朵拉第11章",
+    "status": "page-reviewed",
+    "scope": "本次只交叉核对新增战斗机制；原接取日历保留，缺少单列完成期限仍留空。未作游戏内实测，版本与难度未注明。",
+    "spoilerLevel": "外传机制"
+  },
+  {
+    "id": "anatolia",
+    "person": "阿纳托莉娅",
+    "title": "被抹去之民的女王",
+    "place": "帝都 · 市街东北侧",
+    "reward": "电子扰乱索 ×1",
+    "routes": {
+      "dietrich": [
+        {
+          "chapter": "11",
+          "start": "10/5",
+          "end": "10/14",
+          "deadline": "10/17"
+        }
+      ],
+      "leda": [
+        {
+          "chapter": "10",
+          "start": "10/5",
+          "end": "10/14",
+          "deadline": "10/17"
+        }
+      ]
+    },
+    "consequence": "关系到莎兰的招募与第三部第二区分的阿纳托莉娅加入。护送平民的脱离人数还影响追加报酬，尽量全员救出。",
+    "people": "莎兰、阿纳托莉娅",
+    "steps": "向市街的阿纳托莉娅接取，之后前往白鸦台；预留帝都外的移动时间。",
+    "sources": [
+      {
+        "url": "https://docs.qq.com/sheet/DV0N0VUZLSXRmUWFq",
+        "label": "腾讯共创表 · 03-全外传信息（2026-09-29 核对）"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/577885",
+        "label": "外传接取地点与完成期限 · GameWith"
+      }
+    ]
+  },
+  {
+    "id": "kai",
+    "person": "凯伊",
+    "title": "大逃脱",
+    "place": "帝都 · 市街",
+    "reward": "宝珠箱 ×1",
+    "routes": {
+      "dietrich": [
+        {
+          "chapter": "11",
+          "start": "10/16",
+          "end": "10/22",
+          "deadline": null
+        }
+      ],
+      "theodora": [
+        {
+          "chapter": "12",
+          "start": "10/16",
+          "end": "10/22",
+          "deadline": null
+        }
+      ],
+      "leda": [
+        {
+          "chapter": "11",
+          "start": "10/16",
+          "end": "10/22",
+          "deadline": null
+        }
+      ]
+    },
+    "consequence": "完成是蒂亚拉招募条件之一；仍需满足名声、支援并准备交涉费用3000G。凯伊本人不会因此加入本篇。",
+    "people": "蒂亚拉",
+    "steps": "在帝都市街接取凯伊相关外传。",
+    "sources": [
+      {
+        "url": "https://docs.qq.com/sheet/DV0N0VUZLSXRmUWFq",
+        "label": "腾讯共创表 · 03-全外传信息（2026-09-29 核对）"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/577861",
+        "label": "GameWith · 凯伊外传胜败条件与香炉",
+        "evidenceLocation": "「セントリオンを倒せばクリア」「左下の黄色いエリアに敵が入ると敗北」「香炉を使って敵を足止めする」；正文464—485行",
+        "checkedAt": "2026-10-02"
+      },
+      {
+        "url": "https://game8.jp/fe-banshisenko/816785",
+        "label": "Game8 · 凯伊外传香炉范围与敌将击破",
+        "evidenceLocation": "「敵がポイントに到達する前にクリアする」「香炉を活用して敵を足止めしよう」「雑魚は追いかけずにボスを素早く倒すのがおすすめ」；正文99—114行",
+        "checkedAt": "2026-10-02"
+      },
+      {
+        "url": "https://altema.jp/febansisenkou/kaigaiden",
+        "label": "Altema · 凯伊外传香炉与防线",
+        "evidenceLocation": "「敵が指定ポイントに到達すると敗北」「香炉を破壊すると敵を足止め可能」；正文122—145行",
+        "checkedAt": "2026-10-02"
+      }
+    ],
+    "strategy": [
+      "击败敌将盛托利翁即可过关，但敌人进入左下方黄色目标区域也会导致失败。先保住通道，再把主力火力集中到敌将。",
+      "破坏香炉可伤害周围3格内的敌人并降低其移动力。可留一名射程或机动性较好的单位负责香炉，趁敌人聚集时拖住追兵。"
+    ],
+    "route": "迪托利希／赛奥朵拉／蕾达线",
+    "chapter": "迪托利希第11章；赛奥朵拉第12章；蕾达第11章",
+    "scope": "本次交叉核对战斗机制与推进建议；原接取窗口及完成期限全部保留。未作游戏内实测，版本与难度未注明。香炉分工和集中火力为推进建议，不是固定编成或一回合击杀保证。",
+    "checkedAt": "2026-10-02",
+    "gameVersion": null,
+    "difficulty": null,
+    "status": "page-reviewed",
+    "spoilerLevel": "外传机制"
+  },
+  {
+    "id": "dietrich",
+    "person": "迪托利希",
+    "title": "封印的过去",
+    "place": "帝都 · 大斗技场前广场",
+    "reward": "沙罗曼达护手 ×1",
+    "routes": {
+      "theodora": [
+        {
+          "chapter": "12",
+          "start": "10/16",
+          "end": "10/21",
+          "deadline": "10/24"
+        }
+      ],
+      "leda": [
+        {
+          "chapter": "11",
+          "start": "10/16",
+          "end": "10/29",
+          "deadline": "11/1"
+        }
+      ]
+    },
+    "consequence": "蕾达篇完成后，还要等迪托利希队败退并满足其他交涉条件，才能招募法比奥。赛奥朵拉篇虽能做此外传，却不能招募法比奥。",
+    "people": "法比奥",
+    "steps": "找法比奥接取，再前往帝都西南的昏暗洞窟；可用车站缩短路程。",
+    "sources": [
+      {
+        "url": "https://docs.qq.com/sheet/DV0N0VUZLSXRmUWFq",
+        "label": "腾讯共创表 · 03-全外传信息（2026-09-29 核对）"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/577853",
+        "label": "GameWith · 迪托利希外传防守与三路敌军",
+        "evidenceLocation": "「ディートリヒ外伝の攻略ポイント」「敵に有利な武器を持つキャラを配置」「雑魚敵を処理して10ターン耐える」；正文515—561行",
+        "checkedAt": "2026-10-02"
+      },
+      {
+        "url": "https://game8.jp/fe-banshisenko/816837",
+        "label": "Game8 · 迪托利希外传防守目标与分路配置",
+        "evidenceLocation": "「青色のマスに敵を踏み込ませずに10ターン防衛すればクリア」「中央は槍、右ルートは弓キャラを配置するのがおすすめ」；正文101—130行；日期分歧另记",
+        "checkedAt": "2026-10-02"
+      },
+      {
+        "url": "https://altema.jp/febansisenkou/dhitorihigaiden",
+        "label": "Altema · 迪托利希外传增援与飞行威胁",
+        "evidenceLocation": "「10ターン耐久するだけでクリア」「右ルートの飛行ユニットの移動範囲に注意」；正文118—129行",
+        "checkedAt": "2026-10-02"
+      },
+      {
+        "url": "https://appmedia.jp/fe_banshisenkou/80413348",
+        "label": "AppMedia · 迪托利希外传守点与推进建议",
+        "evidenceLocation": "「目標地点を守りながら10ターン耐える」「奥に進み過ぎない」；正文127—146行；日期表存在路线标签矛盾，不用于日期裁定",
+        "checkedAt": "2026-10-02"
+      }
+    ],
+    "strategy": [
+      "守住后方蓝色目标区域10回合即可过关；杂兵会持续增援，不必向地图深处追求全灭。敌潮间隙先回复，并留意武器耐久。",
+      "三路敌人类型不同：左侧步兵可用远程单位处理，中央骑兵用枪兵应对，右侧飞行敌人交给弓兵。回合结束前尤其检查飞行敌人能否越过防线。"
+    ],
+    "route": "赛奥朵拉／蕾达线",
+    "chapter": "赛奥朵拉第12章；蕾达第11章",
+    "scope": "本次交叉核对战斗机制与推进建议；原接取窗口及完成期限全部保留。未作游戏内实测，版本与难度未注明。攻略正文未区分两路线的战场配置，未据此断言两线各难度完全相同。",
+    "checkedAt": "2026-10-02",
+    "gameVersion": null,
+    "difficulty": null,
+    "status": "page-reviewed",
+    "spoilerLevel": "外传机制"
+  },
+  {
+    "id": "orhel",
+    "person": "奥尔赫尔",
+    "title": "未了的心愿",
+    "place": "帝都 · 克蕾尔神殿分殿前",
+    "reward": "治愈之杖 ×1",
+    "routes": {
+      "kai": [
+        {
+          "chapter": "11",
+          "start": "10/18",
+          "end": "10/19",
+          "deadline": "10/21"
+        }
+      ],
+      "dietrich": [
+        {
+          "chapter": "11",
+          "start": "10/18",
+          "end": "10/25",
+          "deadline": "10/27"
+        }
+      ],
+      "theodora": [
+        {
+          "chapter": "12",
+          "start": "10/18",
+          "end": "10/22",
+          "deadline": "10/24"
+        }
+      ],
+      "leda": [
+        {
+          "chapter": "11",
+          "start": "10/18",
+          "end": "10/25",
+          "deadline": "10/27"
+        }
+      ]
+    },
+    "consequence": "关系到迪雅各的招募，以及第三部第二区分奥尔赫尔的加入。凯伊篇只有两天可以接取。",
+    "people": "迪雅各、奥尔赫尔",
+    "steps": "向神殿分殿前的奥尔赫尔接取；接下后及时出城完成。",
+    "sources": [
+      {
+        "url": "https://docs.qq.com/sheet/DV0N0VUZLSXRmUWFq",
+        "label": "腾讯共创表 · 03-全外传信息（2026-09-29 核对）"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/577863",
+        "label": "外传接取地点与完成期限 · GameWith"
+      }
+    ]
+  }
+]

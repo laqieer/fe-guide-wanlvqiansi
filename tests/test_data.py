@@ -80,7 +80,7 @@ class DataTests(unittest.TestCase):
 
     def test_october_review_scope_and_dates(self):
         chars={c['name']:c for c in DATA['characters']}
-        self.assertEqual(chars['奥林匹亚']['negotiations']['routes'],['迪托利希线'])
+        self.assertEqual(chars['奥林匹亚']['negotiations']['routes'],['凯伊线','迪托利希线'])
         self.assertIn('碧晶洞穴',chars['奥林匹亚']['negotiations']['byRoute']['迪托利希线'])
         self.assertNotIn('铁弓×2',chars['努佐']['recruit']['迪托利希线'])
         self.assertIn('交涉提示',chars['努佐']['recruit']['迪托利希线'])
@@ -146,7 +146,7 @@ class DataTests(unittest.TestCase):
         self.assertEqual(chars['洛蕾塔']['plan']['kai']['needs'],[{'type':'item','text':'铁剑×3','item':'铁剑','qty':3}])
         self.assertTrue(chars['洛蕾塔']['plan']['theodora']['lowest'])
         self.assertEqual([n['type'] for n in chars['蒂亚拉']['plan']['leda']['needs']],['paralogue','gold'])
-        self.assertEqual(chars['米迦艾拉']['plan']['dietrich'],{'kind':'auto','chapter':4,'needs':[{'type':'gold','text':'3000G（详细页记载，待实机核对）','gold':3000}]})
+        self.assertEqual(chars['米迦艾拉']['plan']['dietrich'],{'kind':'auto','chapter':4,'needs':[]})
         self.assertEqual(chars['艾丝梅拉尔达']['plan']['leda']['needs'][0]['type'],'quest')
         self.assertIsNone(chars['努佐']['plan']['dietrich']['needs'][0]['qty'])
         self.assertEqual(chars['古扎岚']['plan']['kai']['kind'],'tutorial')

@@ -55,7 +55,7 @@
     "name": "彼得",
     "kind": "任务",
     "condition": "完成「彼得的请求」",
-    "details": "先接受「ピーテルの頼み」，再到東アイギーナ山探索，取得「幻のギンジ」后交付。未接任务时不能预先拾取。",
+    "details": "先接受「ピーテルの頼み」，再到世界地图东部的「アイギーナ山」探索，取得「幻のギンジ」后交付。未接任务时不能预先拾取。",
     "routes": [
       "迪托利希线",
       "赛奥朵拉线",
@@ -66,12 +66,32 @@
       {
         "url": "https://gamewith.jp/fefw/577320",
         "label": "GameWith · 彼得资料"
+      },
+      {
+        "url": "https://game8.jp/fe-banshisenko/816419",
+        "label": "Game8 · 彼得受注图与地名",
+        "checkedAt": "2026-10-10",
+        "evidenceLocation": "L194–205既有四线条件及地图东部ウルカ駅附近探索。已实际查看L204原始受注图，任务目的地直接写アイギーナ山、交付幻のギンジ×1；图不提供可无歧义识别的主角头像，因此不冒称三线分别实测。",
+        "part": 1,
+        "route": null,
+        "chapter": null,
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部外传／招募"
       }
     ],
     "checkedAt": "2026-09-29",
     "gameVersion": null,
     "status": "page-reviewed",
-    "scope": "公开攻略页面核对；未作游戏内逐项实测。编辑建议不代表唯一最优解。"
+    "scope": "公开攻略页面核对；未作游戏内逐项实测。编辑建议不代表唯一最优解。",
+    "imageEvidence": [
+      {
+        "url": "https://img.game8.jp/13012424/61b4935858d943c2d745b096dd5012cd.webp/show",
+        "checkedAt": "2026-10-10",
+        "evidenceLocation": "已实看：ピーテルの頼み受注图，目的地アイギーナ山、幻のギンジ0/1与11/27；无清晰主角头像，不用于新增分线期限。",
+        "route": null
+      }
+    ]
   },
   {
     "name": "艾丝梅拉尔达",
@@ -641,16 +661,18 @@
   },
   {
     "name": "大刀",
-    "kind": "物品 · 数量有分歧",
-    "condition": "コーシャルーガー ×2（资料表记载）",
-    "details": "GameWith 的表格及标题写 2 个，同页正文却写 3 个，存在内部矛盾。凯伊线玩家招募记录支持 2 个；其他路线尚缺独立实测。请以当前存档的交付提示复核，不把所有路线标成已实测。 可在コーシャルー湖、ゾトー湖探索，アルシネウス大橋的探索也有此鱼（AlGest列为？？？栏）。凯伊篇不能到ゾトー湖；其他地点也须先确认本线通路已开放。",
+    "kind": "物品交付",
+    "condition": "交付コーシャルーガー；凯伊线×2，其他线按交涉提示备齐",
+    "details": "达到本线支援与名声条件后发起交涉，按交付提示备齐コーシャルーガー。 可在コーシャルー湖、ゾトー湖探索，アルシネウス大橋的探索也有此鱼（AlGest列为？？？栏）。凯伊篇不能到ゾトー湖；其他地点也须先确认本线通路已开放。",
     "routes": [
       "凯伊线",
       "迪托利希线",
       "赛奥朵拉线",
       "蕾达线"
     ],
-    "byRoute": {},
+    "byRoute": {
+      "凯伊线": "交付コーシャルーガー×2后加入。"
+    },
     "sources": [
       {
         "url": "https://gamewith.jp/fefw/577336",
@@ -683,19 +705,26 @@
         "difficulty": null,
         "gameVersion": null,
         "spoiler": "第一部"
+      },
+      {
+        "url": "https://game8.jp/fe-banshisenko/816455",
+        "label": "Game8 · 大刀交涉",
+        "evidenceLocation": "交涉条目给2匹；本轮仅与凯伊玩家过程交叉核对本线路线数量。",
+        "checkedAt": "2026-10-12"
       }
     ],
     "checkedAt": "2026-09-29",
     "gameVersion": null,
     "status": "page-reviewed",
     "scope": "公开攻略页面核对；未作游戏内逐项实测。编辑建议不代表唯一最优解。",
-    "acquisitionCheckedAt": "2026-10-02"
+    "acquisitionCheckedAt": "2026-10-02",
+    "quantityCheckedAt": "2026-10-12"
   },
   {
     "name": "乌修拉",
     "kind": "外传＋选项",
-    "condition": "四次都选择「はい」",
-    "details": "先完成塔利穆恩外传，再在交涉四问中全部回答“是”。蕾达线不可招募。",
+    "condition": "所有问题都选择「はい」",
+    "details": "先完成塔利穆恩外传，再在交涉中全部回答“是”。蕾达线不可招募。",
     "routes": [
       "凯伊线",
       "迪托利希线",
@@ -705,13 +734,21 @@
     "sources": [
       {
         "url": "https://gamewith.jp/fefw/577307",
-        "label": "GameWith · 乌修拉资料"
+        "label": "GameWith · 乌修拉",
+        "evidenceLocation": "L439–466：三线支援/名声、外传与所有问题答是，蕾达不可招；L549–559：道具袋覆盖自身及周围2格、好機+攻击时（幸运÷2）%造成1.5倍伤害。L531–535的游侠过渡须另外核对路线解锁。",
+        "checkedAt": "2026-10-09"
+      },
+      {
+        "url": "https://game8.jp/fe-banshisenko/816434",
+        "label": "Game8 · 乌修拉",
+        "evidenceLocation": "L61–130：恶棍→森林骑士→探影者方向、迪线已解锁游侠才可改用；L233–244：三线门槛及全部答是，但写三次，与站内四次冲突；L284–305：技能与截图状态。已下载实看交涉单问与技能Rank两张图，均不能证明总问数或固定入队等级。",
+        "checkedAt": "2026-10-09"
       }
     ],
-    "checkedAt": "2026-09-29",
+    "checkedAt": "2026-10-09",
     "gameVersion": null,
     "status": "page-reviewed",
-    "scope": "公开攻略页面核对；未作游戏内逐项实测。编辑建议不代表唯一最优解。"
+    "scope": "外传、路线及全部答是由GameWith与Game8原页交叉核对；题目总数存在差异，交涉单问截图不能裁定总数，故不写次数。未作游戏内实测。"
   },
   {
     "name": "哪吒",
@@ -821,29 +858,80 @@
     "name": "乌尔坦德",
     "kind": "任务＋物品",
     "condition": "完成「乌尔坦德的请求」，交付赠礼盒",
-    "details": "先接任务，再去北部コロイオス砦取得「贈り物の箱」交付；未接任务时不能预先拾取。",
+    "details": "先接受「ウルタンドの頼み」，再回收「贈り物の箱」并交付；未接任务时不能预先拾取。迪托利希线走法见下，其他路线先核对当前任务栏的目的地与期限。",
     "routes": [
       "迪托利希线",
       "赛奥朵拉线",
       "蕾达线"
     ],
-    "byRoute": {},
+    "byRoute": {
+      "迪托利希线": "满足本线3S／5R后，从乌尔坦德的「スカウト」接下请求。前往帝都西北「コロイオス砦」，进入地下城，跟随顶部目标标记调查发光拾取点，取得「贈り物の箱」后回帝都交付。目标是地下城里的任务拾取点，不需要靠重开宝箱或刷敌人掉落取得；此前清过宝箱时仍应检查任务标记。出发前核对当前任务期限，预留往返与回报时间。"
+    },
     "sources": [
       {
         "url": "https://gamewith.jp/fefw/577319",
         "label": "GameWith · 乌尔坦德资料"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/577850",
+        "label": "GameWith · 赠礼盒取得位置",
+        "checkedAt": "2026-10-07",
+        "evidenceLocation": "「贈り物の箱の入手方法」L401–410：明确标题只核迪托利希，其他主角仍调查中；先接任务，再在堡垒地下城取得；起点右侧楼梯到开阔区为本页单独细节。本轮不将未能看图的精确楼梯路线发布。",
+        "part": 1,
+        "route": "迪托利希线",
+        "chapter": null,
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/579060",
+        "label": "GameWith · 乌尔坦德请求流程",
+        "checkedAt": "2026-10-07",
+        "evidenceLocation": "「贈り物の箱の入手方法」L431–439及「コロイオス砦の行き方」L441–449：进入地下城，跟目标标记调查发光点；堡垒在帝都西北。与同站物品页合计只算一个出版来源。",
+        "part": 1,
+        "route": null,
+        "chapter": null,
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
+      },
+      {
+        "url": "https://raiderking.com/fire-emblem-fortunes-weave-how-to-recruit-ultand/",
+        "label": "Raider King · 乌尔坦德招募完整流程",
+        "checkedAt": "2026-10-07",
+        "evidenceLocation": "Skeith Ruch 2026-09-29；「How to Recruit Ultand」L19–30：门槛、接受请求、帝都西北Corroios Fort Ruins、地下城发光采集点、回报入队；明确不是宝箱或敌人掉落。自署截图，但本轮图片403，不能称看过此站图证。",
+        "part": 1,
+        "route": null,
+        "chapter": null,
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
+      },
+      {
+        "url": "https://game8.jp/fe-banshisenko/816420",
+        "label": "Game8 · 乌尔坦德交涉",
+        "checkedAt": "2026-10-07",
+        "evidenceLocation": "「交渉はコロイオス砦で贈り物の箱を拾ってくる」L239–242：堡垒在帝都西北，拾取后交付。原任务截图实际查看，显示目的地コロイオス砦、贈り物の箱0/1及期限11/27；图内不能可靠确定主角，不能拿它裁定三线期限。",
+        "part": 1,
+        "route": null,
+        "chapter": null,
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
       }
     ],
-    "checkedAt": "2026-09-29",
+    "checkedAt": "2026-10-07",
     "gameVersion": null,
     "status": "page-reviewed",
-    "scope": "公开攻略页面核对；未作游戏内逐项实测。编辑建议不代表唯一最优解。"
+    "scope": "第一部迪托利希线。多站原页支持地下城取盒与回报；GameWith物品页明确把位置限定为迪线。本站未实测，版本及难度未知；没有新的最早开放章或各路线期限判定。",
+    "difficulty": null
   },
   {
     "name": "法比奥",
     "kind": "外传＋剧情＋武器",
-    "condition": "迪托利希外传后，待本线第 11 章迪托利希败退，再交付合适武器",
-    "details": "资料记录有交付达·米纳系护手成功的例子（日文表格写「ド・ミナの籠手」）；这只是已知成功例，并非已验证的唯一可用武器。需 3S／9R。",
+    "condition": "完成迪托利希外传，且迪托利希阵营在本线败退后，交付合适武器",
+    "details": "资料记录有交付达·米纳系护手成功的例子（日文表格写「ド・ミナの籠手」）；这只是已知成功例，并非已验证的唯一可用武器。需 3S／9R。 蕾达线也可用「清めの剣」交涉。蕾达第8章布拉干萨同胞团战开始时，塔利穆恩会在出发处附近留下这把剑，需在战场上主动拾取，不是通关后自动入包。若已拾取，先检查库存再另寻交涉武器。 不把已知可用品例扩大为任意贵重武器都能通过。",
     "routes": [
       "蕾达线"
     ],
@@ -852,18 +940,79 @@
       {
         "url": "https://gamewith.jp/fefw/577318",
         "label": "GameWith · 法比奥资料"
+      },
+      {
+        "url": "https://game8.jp/fe-banshisenko/816421",
+        "label": "Game8 · 法比奥净化剑交涉",
+        "checkedAt": "2026-10-07",
+        "evidenceLocation": "「交渉は8章ボスで入手できる『清めの剣』がおすすめ」L238–242明确以清めの剣成功招募，而不只是图片列出可选物品；实际查看物品选择图：蕾达与法比奥、清めの剣20/20（未强化）被选中。截图不是成功/扣物画面。",
+        "part": 1,
+        "route": "蕾达线",
+        "chapter": null,
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
+      },
+      {
+        "url": "https://raiderking.com/fire-emblem-fortunes-weave-how-to-recruit-fabio/",
+        "label": "Raider King · 法比奥招募完整流程",
+        "checkedAt": "2026-10-07",
+        "evidenceLocation": "Skeith Ruch 2026-09-30；L19–31明确蕾达、外传及剧情条件，再交涉；作者亲自用Electron Agitator成功，并明确另列Cleansing Blades也可用。此站独立于Game8，但没有展示清净剑成功后的连续画面；不把所有稀有道具推广为可用。",
+        "part": 1,
+        "route": "蕾达线",
+        "chapter": null,
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
+      },
+      {
+        "url": "https://www.rpgsite.net/guide/21210-fire-emblem-fortunes-weave-part-i-ledas-path-walkthrough",
+        "label": "RPG Site · 蕾达第8章取剑",
+        "checkedAt": "2026-10-07",
+        "evidenceLocation": "完整蕾达流程「Part 1 Chapter 8 – Shape of the Conspiracy」L381–400；「Qualifier Braganca Brotherhood」Notes L399明确开战附近可拾取Cleansing Blade。这是战场拾取，未声称自动入包、全难度对照或永久可补领。",
+        "part": 1,
+        "route": "蕾达线",
+        "chapter": "第8章",
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
+      },
+      {
+        "url": "https://game8.jp/fe-banshisenko/816807",
+        "label": "Game8 · 蕾达第8章净化剑",
+        "checkedAt": "2026-10-07",
+        "evidenceLocation": "「亡者には清めの剣かレダの『滅冥の歌』を使おう」L291–294：塔利穆恩在开战时落下清めの剣，应手动拾取。实际查看战场原图：塔利穆恩台词点名清めの剣，出发处前方有金色发光道具。图本身不是拾取后背包证据。与Game8角色页视为同一出版来源。",
+        "part": 1,
+        "route": "蕾达线",
+        "chapter": "第8章",
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
+      },
+      {
+        "url": "https://appmedia.jp/fe_banshisenkou/80404312",
+        "label": "AppMedia · 蕾达第8章取剑",
+        "checkedAt": "2026-10-07",
+        "evidenceLocation": "「清めの剣が拾える」L132–136：试合开始时塔利穆恩落下清めの剣。完整页面正文已读；本轮未下载其配图。",
+        "part": 1,
+        "route": "蕾达线",
+        "chapter": "第8章",
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
       }
     ],
-    "checkedAt": "2026-09-29",
+    "checkedAt": "2026-10-07",
     "gameVersion": null,
     "status": "page-reviewed",
-    "scope": "公开攻略页面核对；未作游戏内逐项实测。编辑建议不代表唯一最优解。"
+    "scope": "第一部蕾达线。Game8角色页和独立Raider King完整指南均明确表示净化剑可成功；Game8实际选物画面只证明Leda曾在该交涉界面选择未强化净化剑。第8章拾取由RPG Site、Game8及AppMedia本线流程交叉核对，非全版本/难度实測。不得声称道具不消耗或所有耐久/强化状态都成功。",
+    "difficulty": null
   },
   {
     "name": "努佐",
     "kind": "物品 · 按路线核对",
     "condition": "凯伊／赛奥朵拉／蕾达线：铁弓 ×3",
-    "details": "先满足本线支援和名声门槛，再交付铁弓；缺少时查看武器屋或商人的现货。赛奥朵拉线第9章出现有两站对应记录。迪托利希线数量有分歧，先查看当前交涉提示，不能套用另外三线。 第一部王都ブレストン武器屋的铁弓标价每把1500G；リベイラ村为750G，オレンスの町为1125G。以上按城镇列价，不把第三部价格混入；通路及库存以本线进度为准。 帝都ダグシオン武器屋的铁弓标价1500G：凯伊、赛奥朵拉篇第9章起，迪托利希、蕾达篇第7章起。",
+    "details": "先满足本线支援和名声门槛，再交付铁弓；缺少时查看武器屋或商人的现货。赛奥朵拉线第9章出现有两站对应记录。迪托利希线按当前交涉提示准备铁弓，不能套用另外三线的数量。 第一部王都ブレストン武器屋的铁弓标价每把1500G；リベイラ村为750G，オレンスの町为1125G。以上按城镇列价，不把第三部价格混入；通路及库存以本线进度为准。 帝都ダグシオン武器屋的铁弓标价1500G：凯伊、赛奥朵拉篇第9章起，迪托利希、蕾达篇第7章起。",
     "routes": [
       "凯伊线",
       "迪托利希线",
@@ -931,42 +1080,84 @@
   },
   {
     "name": "奥林匹亚",
-    "kind": "三段请求 · 迪托利希线",
-    "condition": "第5章起出现；3S／6R，并依次完成请求1、2、3",
-    "details": "本批只补迪托利希线的三个请求，按下方行程逐项接取、收集和回报。地点与道具保留日文以便对照；其他线不照搬，蕾达线仍是剧情加入。",
+    "kind": "三段请求 · 分路线行程",
+    "condition": "凯伊线3S／8R；迪托利希线第5章起出现、3S／6R；依次完成请求1、2、3",
+    "details": "按下方本线行程逐项接取、收集和回报。凯伊线与迪托利希线的第二、三件物品取得地点不同；地点与道具保留日文便于对照。赛奥朵拉线不照搬，蕾达线仍是剧情加入。",
     "routes": [
+      "凯伊线",
       "迪托利希线"
     ],
     "byRoute": {
-      "迪托利希线": "迪托利希线：先接请求1，到帝都东南「暁平原」探索取得「緋灼の雫」；交付后接请求2，到西侧沙漠「バイナのオアシス」的市场购买「アウラムローズ」；再交付并接请求3，到西南「碧晶洞穴」探索取得「碧き心臓」，回报后入队。每段先接取、再收集、再回报。第二件物品按当前市场标价预留金钱，出发前核对存档任务期限；日文地名和物品名保留供对照。"
+      "迪托利希线": "迪托利希线：先接请求1，到帝都东南「暁平原」探索取得「緋灼の雫」；交付后接请求2，到西侧沙漠「バイナのオアシス」的市场购买「アウラムローズ」；再交付并接请求3，到西南「碧晶洞穴」探索取得「碧き心臓」，回报后入队。每段先接取、再收集、再回报。第二件物品按当前市场标价预留金钱，出发前核对存档任务期限；日文地名和物品名保留供对照。",
+      "凯伊线": "满足3S／8R后，从「スカウト」接下请求1，到帝都东南「暁平原」探索取得「緋灼の雫」，回帝都交付。接下请求2后，到西南「クリュテイオス平原」探索取得「アウラムローズ」，再回帝都交付并接请求3。第三段前往「ワルハラ鉱山」，选择「ダンジョン探索」进入矿山，跟随任务标记调查地面发光点，取得「碧き心臓」后回帝都交付，确认正式入队。矿山任务物品不是宝箱或木箱掉落；出发前核对当前任务期限，并给每段往返及回报留出时间。"
     },
     "sources": [
       {
         "url": "https://gamewith.jp/fefw/577309",
         "label": "GameWith · 奥林匹亚分路线交涉",
         "checkedAt": "2026-10-01",
-        "evidenceLocation": "「スカウト条件・交渉」及「頼み1／2／3」；本次核对迪托利希线"
+        "evidenceLocation": "「スカウト条件・交渉」及「頼み1／2／3」；本次核对迪托利希线",
+        "route": "迪托利希线"
       },
       {
         "url": "https://lushgreengame.com/fe-bnssnk-olympia/",
         "label": "玩家记录 · 迪托利希线三段请求",
         "checkedAt": "2026-10-01",
-        "evidenceLocation": "「オリンピアの頼み」「暁平原／バイナのオアシス／碧晶洞穴の行き方」；作者明确说明本次为迪托利希线"
+        "evidenceLocation": "「オリンピアの頼み」「暁平原／バイナのオアシス／碧晶洞穴の行き方」；作者明确说明本次为迪托利希线",
+        "route": "迪托利希线"
       },
       {
         "url": "https://game8.jp/fe-banshisenko/816430",
         "label": "Game8 · 奥林匹亚交涉",
         "checkedAt": "2026-10-01",
-        "evidenceLocation": "「スカウト条件・交渉の攻略」；第5章、3S／6R及三项地点"
+        "evidenceLocation": "「スカウト条件・交渉の攻略」；第5章、3S／6R及三项地点",
+        "route": "迪托利希线"
+      },
+      {
+        "url": "https://chucco.com/fefw-olympia-scout/",
+        "label": "ちゅこっと陽だまる · 凯伊线奥林匹亚三段请求实得记录",
+        "checkedAt": "2026-10-09",
+        "evidenceLocation": "2026-10-04文章「オリンピアの頼み／頼み2／頼み3」L44–113。已实际查看11张原图：凯伊头像、三次受注、前两件交付、矿山调查点及成功入队均可辨；各图显示作者单档11月进度，不推定最早招募章或普遍期限。",
+        "part": 1,
+        "route": "凯伊线",
+        "chapter": null,
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/578553",
+        "label": "GameWith · 奥林匹亚请求2分路线取得",
+        "checkedAt": "2026-10-09",
+        "evidenceLocation": "L417–471：先完成并回报请求1，再接请求2；凯伊前往クリュテイオス平原，与迪／赛的绿洲购买分开。只核采用凯伊行程，不新增1400G及统一期限。",
+        "part": 1,
+        "route": "凯伊线",
+        "chapter": null,
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/578598",
+        "label": "GameWith · 奥林匹亚请求3矿山调查",
+        "checkedAt": "2026-10-09",
+        "evidenceLocation": "L417–477：凯伊为ワルハラ鉱山，入地下城调查地面发光物，宝箱或木箱不掉落任务物品；取得后回帝都交付。与独立玩家凯伊原图交叉核对，不以关卡宝箱完成计数代替任务拾取。",
+        "part": 1,
+        "route": "凯伊线",
+        "chapter": null,
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
       }
     ],
-    "checkedAt": "2026-10-01",
+    "checkedAt": "2026-10-09",
     "gameVersion": null,
     "difficulty": null,
-    "route": "迪托利希线",
-    "chapter": "第一部第5章起出现；实际完成章节取决于进度",
+    "route": "凯伊线 / 迪托利希线",
+    "chapter": "第一部；凯伊线实际接取以本线门槛及当前任务为准，迪托利希线既有第5章起出现记录保留",
     "status": "page-reviewed",
-    "scope": "攻略页与明确路线的玩家记录交叉核对；本批只补迪托利希线交涉，不代表全路线或全难度实测。版本与难度未注明。"
+    "scope": "凯伊新增行程由GameWith完整攻略与明确凯伊路线的独立实玩记录交叉核对，已查看玩家受注、探索、交付与成功入队截图；迪托利希线沿用既有核对。未作本站实机验证，不新增统一日期、最短回合数、游戏版本或难度结论。",
+    "acquisitionCheckedAt": "2026-10-09"
   },
   {
     "name": "哈尔温",
@@ -1206,5 +1397,53 @@
     "chapter": null,
     "status": "page-reviewed",
     "scope": "公开页面核对：姓名、四线门槛、金币交涉；未作游戏内实测，首次出现场景与礼物反应分歧未裁定。"
+  },
+  {
+    "name": "杰斯特",
+    "kind": "三段任务",
+    "condition": "每段完成后回帝都报告，再接下一段",
+    "details": "先满足本线支援与名声门槛，三段战斗请求须逐段接取、完成并回报，不能先打齐再一次交差。其他路线出发前按当前任务栏核对地点和期限。",
+    "routes": [
+      "凯伊线",
+      "迪托利希线",
+      "赛奥朵拉线",
+      "蕾达线"
+    ],
+    "byRoute": {
+      "迪托利希线": "请求2须先完成并回报请求1，再接「ジェスターの頼み2」。前往帝都西北、タレイア州的「セドー砦」，击败「屍獄のデュナンゾ」后回帝都，从杰斯特的「スカウト」报告，再接请求3。出发前核对当前任务期限并预留回报时间。"
+    },
+    "sources": [
+      {
+        "url": "https://chucco.com/fefw-jester-scout/",
+        "label": "ちゅこ · 迪托利希线杰斯特招募实玩",
+        "checkedAt": "2026-10-15",
+        "evidenceLocation": "2026-10-13文章请求2段落L96–126：受注→セドー砦→屍獄のデュナンゾ→迪托利希败走条件→胜利→回帝都回报。实际查看受注、路线地图、战斗条件和胜利四图；报告动作由作者文字描述，未取得报告菜单截图。",
+        "part": 1,
+        "route": "迪托利希线",
+        "chapter": null,
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
+      },
+      {
+        "url": "https://gamewith.jp/fefw/579107",
+        "label": "GameWith · 杰斯特请求2分路线攻略",
+        "checkedAt": "2026-10-15",
+        "evidenceLocation": "正文「目的地で敵を全滅させる」将凯伊矿山与其他主人公セドー砦分开；概要表仍统一写矿山。只用于交叉支持已由独立迪线图文确认的地点，不裁定其余三线。",
+        "part": 1,
+        "route": "迪托利希线",
+        "chapter": null,
+        "difficulty": null,
+        "gameVersion": null,
+        "spoiler": "第一部招募"
+      }
+    ],
+    "checkedAt": "2026-10-15",
+    "gameVersion": null,
+    "difficulty": null,
+    "route": "第一部四路线；新增地点仅限迪托利希线",
+    "chapter": null,
+    "status": "page-reviewed",
+    "scope": "迪线请求2由独立玩家过程文字及实际查看的受注、地图、战斗条件、胜利图片交叉核验；非本站游戏内实测。报告步骤有文字记录，未取得报告菜单截图。凯伊／赛奥朵拉／蕾达目的地与期限未据此裁定。"
   }
 ]
